@@ -17,7 +17,7 @@ export default async function Post({ params }: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
-
+  console.log(content);
   return (
     <main>
       <Alert preview={post.preview} />
